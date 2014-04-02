@@ -1,44 +1,44 @@
 
 1.table
 
-CREATE TABLE `gradereports` (
-  `studentid` varchar(20) NOT NULL,
-  `studentname` varchar(25) NOT NULL,
-  `courseid` varchar(30) NOT NULL,
-  `grade` number(10) NOT NULL,
-  `lecture` varchar(20) NOT NULL,
-  `room` char(1) DEFAULT NULL,
-  `title` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`studentid`)
+CREATE TABLE gradereports (
+  studentid VARCHAR(20) NOT NULL,
+  studentname VARCHAR(25) NOT NULL,
+  courseid VARCHAR(30) NOT NULL,
+  grade NUMBER(10) NOT NULL,
+  lecture VARCHAR(20) NOT NULL,
+  room CHAR(1) DEFAULT NULL,
+  title VARCHAR(20) DEFAULT NULL,
+  PRIMARY KEY (studentid)
 );
 
 
 2.
-CREATE TABLE `courseinformations` (
-  `studentid` varchar(20) NOT NULL,
-  `courseid` varchar(30) NOT NULL,
-  `grade` number(10) NOT NULL,
-  `lecture` varchar(20) NOT NULL,
-  `room` char(1) DEFAULT NULL,
-  `title` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`courseid`)
+CREATE TABLE courseinformations (
+  studentid VARCHAR(20) NOT NULL,
+  courseid VARCHAR(30) NOT NULL,
+  grade NUMBER(10) NOT NULL,
+  lecture VARCHAR(20) NOT NULL,
+  room CHAR(1) DEFAULT NULL,
+  title VARCHAR(20) DEFAULT NULL,
+  PRIMARY KEY (courseid)
 );
 
 3.
-CREATE TABLE `rooms` (
-  `lecture` varchar(20) NOT NULL,
-  `room` char(1) NOT NULL,
-  `title` varchar(20) NOT NULL,
-  PRIMARY KEY (`room`)
+CREATE TABLE rooms (
+  lecture VARCHAR(20) NOT NULL,
+  room CHAR(1) NOT NULL,
+  title VARCHAR(20) NOT NULL,
+  PRIMARY KEY (room)
 );
 
 
 4.
-CREATE TABLE `coursegrades` (
-  `studentid` varchar(20) NOT NULL,
-  `courseid` varchar(30) NOT NULL,
-  `grade` number(10) NOT NULL,
-  PRIMARY KEY (`studentid`)
+CREATE TABLE coursegrades (
+  studentid VARCHAR(20) NOT NULL,
+  courseid VARCHAR(30) NOT NULL,
+  grade NUMBER(10) NOT NULL,
+  PRIMARY KEY (studentid)
 );
 
 
